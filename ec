@@ -10,3 +10,6 @@ end
 if game.PlaceId == 155615604 then
      loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Prison%20Life"))() 
 end
+if game.PlaceId == 8884334497 then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/%E2%9B%8F%EF%B8%8F%20Mining%20Clicker%20Simulator"))() 
+end
