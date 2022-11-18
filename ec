@@ -7,3 +7,6 @@ end
 if game.PlaceId == 3101667897 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Legends%20Of%20Speed%20%E2%9A%A1"))()
 end
+if game.PlaceId == 155615604 then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Prison%20Life"))() 
+end
