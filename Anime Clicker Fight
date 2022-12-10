@@ -67,8 +67,13 @@ game:GetService("ReplicatedStorage").System.SystemClick.Click:FireServer()
         end)
 
         MainSection:NewButton("Force Rest Character", "Kills", function()
-            print("Clicked")
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
         end)
+
+        MainSection:NewButton("Claim CHRISTMAS Gift ", "Kills", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5262.31396, -27.6340752, 75.4650726, 0.760179281, 0, -0.649713337, 0, 1, 0, 0.649713337, 0, 0.760179281)
+        end)
+
 
         ---Eggs
         local Eggs = Window:NewTab("Eggs")
@@ -182,6 +187,31 @@ local args = {
 game:GetService("ReplicatedStorage").Tool.DrawUp.Msg.DrawHero:InvokeServer(unpack(args))
  end)
 
+ EggsSection:NewButton("Egg [130T]", "Opens Egg", function()
+local args = {
+    [1] = 13,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Tool.DrawUp.Msg.DrawHero:InvokeServer(unpack(args))
+                end)
+                EggsSection:NewButton("Egg [890T]", "Opens Egg", function()
+local args = {
+    [1] = 14,
+    [2] = 1
+}
+game:GetService("ReplicatedStorage").Tool.DrawUp.Msg.DrawHero:InvokeServer(unpack(args))
+                                    end)
+
+
+ EggsSection:NewButton("Egg [500 GIFTS]", "Opens Egg", function()
+local args = {
+    [1] = 2101,
+    [2] = 1
+}
+game:GetService("ReplicatedStorage").Tool.DrawUp.Msg.DrawHero:InvokeServer(unpack(args))
+            end)
+
 ---Teleports
 local Teleports = Window:NewTab("Teleports")
 local TeleportsSection = Teleports:NewSection("Teleports")
@@ -204,6 +234,14 @@ end)
 TeleportsSection:NewButton("One Punch Man", "Teleports you there", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-101.99603271484375, 3.7279534339904785, 1335.4737548828125)
 end)
+TeleportsSection:NewButton("My Hero Academia", "Teleports you there", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-43.53338623046875, 3.0075385570526123, 1690.40966796875)
+end)
+TeleportsSection:NewButton("Christmas", "Teleports you there", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5256.57861328125, -27.721330642700195, 10.449677467346191)
+end)
+
+
 
 TeleportsSection:NewLabel("Tween")--TWEEN SECTION
 
@@ -249,7 +287,23 @@ TeleportsSection:NewButton("One Punch Man", "Teleports you there", function()
     local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
     tween:Play()
     tween.Completed:Wait()
-end)                  
+end)       
+
+TeleportsSection:NewButton("My Hero Academia", "Teleports you there", function()
+    local CFrameEnd = CFrame.new(-43.53338623046875, 3.0075385570526123, 1690.40966796875) 
+    local Time = 3 
+    local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+    tween:Play()
+    tween.Completed:Wait()
+end)         
+
+TeleportsSection:NewButton("Christmas", "Teleports you there", function()
+    local CFrameEnd = CFrame.new(-5256.57861328125, -27.721330642700195, 10.449677467346191) 
+    local Time = 3 
+    local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+    tween:Play()
+    tween.Completed:Wait()
+end)   
         ---Player
         local Player = Window:NewTab("Player")
         local PlayerSection = Player:NewSection("Player")
@@ -307,3 +361,11 @@ end)
 InfoSection:NewKeybind("HideGui", "HideGui", Enum.KeyCode.RightShift, function()
     Library:ToggleUI()
 end)
+
+---ChangeLogs
+local ChangeLogs = Window:NewTab("ChangeLogs")
+local ChangeLogsSection = ChangeLogs:NewSection("ChangeLogs")
+
+ChangeLogsSection:NewLabel("Claim Christmas Reward")
+ChangeLogsSection:NewLabel("Open Christmas Egg and 130T,890T")
+ChangeLogsSection:NewLabel("My Hero Academia Telport and Christmas Island")
