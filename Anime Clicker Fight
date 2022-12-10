@@ -204,7 +204,7 @@ game:GetService("ReplicatedStorage").Tool.DrawUp.Msg.DrawHero:InvokeServer(unpac
                                     end)
 
 
- EggsSection:NewButton("Egg [500 GIFTS]", "Opens Egg", function()
+ EggsSection:NewButton("Egg [600 GIFTS]", "Opens Egg", function()
 local args = {
     [1] = 2101,
     [2] = 1
