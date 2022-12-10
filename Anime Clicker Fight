@@ -35,44 +35,13 @@ game:GetService("ReplicatedStorage").System.SystemClick.Click:FireServer()
             end
         end)
 
-        MainSection:NewToggle("AutoFarm (Fast)", "AutoFarms", function(state)
-            if state then
 
-                _G.autofarm = true
-                while _G.autofarm == true do
-                    local CFrameEnd = CFrame.new(9612.07421875, 2.9995951652526855, -342.848388671875)
-                    local Time = 30 ---seconds you want be there lol
-                    local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
-                    tween:Play()
-                    tween.Completed:Wait()
-                    task.wait()
-                end            else
-                print("Toggle Off")
-            end
-        end)
-        MainSection:NewToggle("AutoFarm (Normal)", "AutoFarms", function(state)
-            if state then
-
-                _G.autofarm = true
-                while _G.autofarm == true do
-                    local CFrameEnd = CFrame.new(9612.07421875, 2.9995951652526855, -342.848388671875)
-                    local Time = 70 ---seconds you want be there lol
-                    local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
-                    tween:Play()
-                    tween.Completed:Wait()
-                    task.wait()
-                end            else
-                print("Toggle Off")
-            end
-        end)
-
-        MainSection:NewButton("Force Rest Character", "Kills", function()
-            game.Players.LocalPlayer.Character.Humanoid.Health = 0
-        end)
+    
 
         MainSection:NewButton("Claim CHRISTMAS Gift ", "Kills", function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5262.31396, -27.6340752, 75.4650726, 0.760179281, 0, -0.649713337, 0, 1, 0, 0.649713337, 0, 0.760179281)
         end)
+        
 
 
         ---Eggs
@@ -360,6 +329,14 @@ InfoSection:NewButton("Copy Discord Link", "Copy Discord link", function()
 end)
 InfoSection:NewKeybind("HideGui", "HideGui", Enum.KeyCode.RightShift, function()
     Library:ToggleUI()
+end)
+
+InfoSection:NewButton("Destory Gui", "Destorys UI", function()
+    for i,v in pairs(game.CoreGui:GetDescendants()) do -- idk if there is such a thing as "game.CoreGui"
+        if v.Name == "pages" then
+        v.Parent:Destroy()
+        end
+        end
 end)
 
 ---ChangeLogs
