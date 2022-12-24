@@ -17,6 +17,6 @@ if game.PlaceId == 10598587051 then
      loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Anime%20Clicker%20Fight"))() 
 end
 if game.PlaceId == 286090429 then
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Arsenal%20SCRIPT%20BEANHUB"))() 
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Arsenal"))() 
 end
 
