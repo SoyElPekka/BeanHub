@@ -19,4 +19,13 @@ end
 if game.PlaceId == 286090429 then
      loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/ArsenalNew"))() 
 end
+if game.PlaceId == 2753915549 then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/BloxFruits"))() 
+end
+if game.PlaceId == 4442272183 then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/BloxFruits"))() 
+end
+if game.PlaceId == 7449423635 then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/BloxFruits"))() 
+end
 
