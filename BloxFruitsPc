@@ -19,3 +19,6 @@ end
 if game.PlaceId == 10598587051  then --- Anime Clicker Fight [ 🧱Anime]
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/bloxfruitspcnew"))()
 end
+if game.PlaceId == 10598587051  then --- Anime Clicker Fight [ 🧱Anime]
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/bloxfruitspcnew"))()
+end
