@@ -28,3 +28,6 @@ end
 if game.PlaceId == 155615604  then --- Prison Life
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Prison%20Life"))()
 end
+if game.PlaceId == 12192552089  then --- Fruit Warriors
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/FruitWaRRIORS.lua"))()
+end
