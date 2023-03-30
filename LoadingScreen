@@ -31,3 +31,6 @@ end
 if game.PlaceId == 12192552089  then --- Fruit Warriors
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/FruitWaRRIORS.lua"))()
 end
+if game.PlaceId == 183364845  then ---  Speed Run 4
+    loadstring(game:HttpGet(https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/Speed%20Run%204"))()
+end
