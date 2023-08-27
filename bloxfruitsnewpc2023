@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://beanhub.xyz/bloxfruits"))()
+loadstring(game:HttpGet(('https://beanhub.xyz/bloxfruits'),true))()
